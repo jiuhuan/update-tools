@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Update File</title>
+  <style type="text/css">
+    html, body{
+      width: 100%;
+      height: 100%;
+      background: #f2f2f2;
+    }
+    .main{
+      width: 500px;
+      height: 300px;
+      padding: 25px;
+      transform: translate(-50%, -50%);
+      background: #FFF;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+    .login div{
+      margin: 15px 0;
+    }
+    .login input[type="text"],
+    .login input[type="password"]{
+      width: 300px;
+      line-height: 36px;
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+    .login button[type="submit"]{
+      color: #fff;
+      background: #f50;
+      border: none;
+      height: 36px;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main login">
+    <div>登录</div>
+    <form action="/submit_login" method="get">
+    <div>
+      <input type="text" name="username" />
+    </div>
+    <div>
+      <input type="password" name="password" />
+    </div>
+    <div>
+      <button type="submit">登录</button>
+    </div>
+    </form>
+  </div>
+</body>
+</html>

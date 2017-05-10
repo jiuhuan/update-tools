@@ -1,0 +1,40 @@
+# Support ES2016 features
+parser: babel-eslint
+
+extends: standard
+
+plugins:
+  - babel
+
+rules:
+  spaced-comment: [2, always]
+  lines-around-comment: [2, {"beforeBlockComment": true, "afterBlockComment": false, "afterLineComment": false }]
+  arrow-parens: 0
+  babel/arrow-parens: [0 , as-needed]
+  no-duplicate-imports: 0
+  eqeqeq: 0
+  no-return-assign: 0 # fails for arrow functions
+  # no-var: 2
+  semi: [2, always]
+  yoda: 0
+  arrow-spacing: 1
+  prefer-arrow-callback: 0
+  dot-location: [2, "property"]
+  no-multi-spaces: 0
+  no-useless-computed-key: 0
+  no-unsafe-finally: 0
+  no-unused-vars: [1, { "vars": "all", "args": "none" }]
+  no-useless-escape: 0
+  space-before-blocks: 0
+  comma-spacing: [1, { "before": false, "after": true }]
+  comma-dangle: [1, always-multiline]
+  template-curly-spacing: 0
+  array-bracket-spacing: [0, "never"]
+  camelcase: 1
+  space-before-function-paren:
+    - 0
+    - always
+  standard/object-curly-even-spacing: [0, "either"]
+  standard/array-bracket-even-spacing: [0, "either"]
+  standard/computed-property-even-spacing: [2, "even"]
+  # standard/no-callback-literal: [2, ["cb", "callback", "next"]]
