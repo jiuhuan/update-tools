@@ -1,3 +1,4 @@
 node_modules/
 uploader/
 build/
+.DS_Store
