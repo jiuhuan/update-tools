@@ -22,3 +22,11 @@ npm run install-node
 npm run start
 open 'http://127.0.0.1:8080'
 ```
+
+或者，还可以使用`build.sh`脚本进行打包：
+```bash
+sh ./build.sh
+```
+
+打包后的压缩包文件存放在`build/`目录下。
+
